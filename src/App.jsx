@@ -151,7 +151,7 @@ export default function App() {
 
   const sendWhatsAppOrder = () => {
     const phone = "905322954183"; // Hasbahçem WhatsApp No
-    let message = `*Hasbahçem Organik Ürünler Siparişi*\n\nMerhaba, bahçenizden aşağıdaki doğal ürünleri sipariş etmek istiyorum:\n\n`;
+    let message = `*Hasbahçem Doğal Tarım Ürünleri Siparişi*\n\nMerhaba, bahçenizden aşağıdaki doğal ürünleri sipariş etmek istiyorum:\n\n`;
     
     cart.forEach(item => {
       message += `• *${item.name}* - ${item.quantity} ${item.unit}\n`;
@@ -194,7 +194,7 @@ export default function App() {
               <span className={`text-[10px] md:text-xs uppercase tracking-widest font-semibold block -mt-1 transition-colors duration-300 ${
                 scrolled ? 'text-sage-500' : 'text-primary-100/90'
               }`}>
-                %100 Organik Tarım
+                %100 Doğal Tarım
               </span>
             </div>
           </a>
@@ -345,7 +345,7 @@ export default function App() {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="font-bold text-sage-900 text-sm">Organik & Yerli</h3>
+              <h3 className="font-bold text-sage-900 text-sm">Doğal Tarım & Yerli</h3>
               <p className="text-xs text-sage-500">Yerel & yerli üretim garantisi</p>
             </div>
           </div>
@@ -398,7 +398,7 @@ export default function App() {
               </div>
 
               <p className="text-sage-700 text-sm md:text-base leading-relaxed">
-                Her şey bir hayalle başladı; çocuklarımıza tamamen katkısız, mevsiminde ve toprak ananın sunduğu en saf haliyle gıdalar yedirebilmek. Bu amaçla çıktığımız yolda, ailemizin bahçesinde yetiştirdiğimiz organik ürünlerimizi zamanla sizlerin de sofralarına ulaştırmaya karar verdik.
+                Her şey bir hayalle başladı; çocuklarımıza tamamen katkısız, mevsiminde ve toprak ananın sunduğu en saf haliyle gıdalar yedirebilmek. Bu amaçla çıktığımız yolda, ailemizin bahçesinde yetiştirdiğimiz doğal tarım ürünlerimizi zamanla sizlerin de sofralarına ulaştırmaya karar verdik.
               </p>
 
               <p className="text-sage-700 text-sm md:text-base leading-relaxed">
@@ -850,7 +850,7 @@ export default function App() {
             <div>
               <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Üretim Standartlarımız</h4>
               <ul className="space-y-2 text-xs text-white/70">
-                <li>Organik Tarım Yöntemleri</li>
+                <li>Doğal Tarım Yöntemleri</li>
                 <li>Geleneksel Doğal Arıcılık</li>
                 <li>İyi Tarım Uygulamaları</li>
               </ul>
