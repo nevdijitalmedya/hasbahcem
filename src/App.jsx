@@ -32,7 +32,7 @@ const PRODUCTS = [
     price: 380,
     unit: "Kg",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkfqCVowTL-O1-q3WfW6ftTUs6kl6UqsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWnpq28yEOU6KNqYlC8dYY3c_0shuDgPjdHSPjAyUDilWPv37a5SR-26_A8PE8c=w800",
     description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
   },
   {
@@ -42,7 +42,7 @@ const PRODUCTS = [
     price: 150,
     unit: "30 Adet",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmmCNkhou6Tf7f0zFZiyyxpuEIiZBnNDNyAk17XYeZ4NrzW_g2pIQ1lR7Z5x3i_DqcVNXavGFGKhDKbyvKZEFX5__vlGQYpMhZ90NvRmB8NLwB0GPT--wYrKLwoKcMlW2VIGUhdDfWswUTO=w800",
     description: "Bahçemizde özgürce dolaşan, doğal yemlerle beslenen tavuklarımızın günlük taze yumurtaları."
   },
   {
@@ -52,7 +52,7 @@ const PRODUCTS = [
     price: 450,
     unit: "1 Litre",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl7iWotlBfPaOVFyNUzMQn7pPuQTRrv1djujpSPBYesl0PZ3S9FKKS2xtLbQEe3knSS30MT6YxsxOObclJorg_ebWaDk9mBe0XizF77Mym9JuAKkegUMjJGgIzWoalf8TdPFP7qV_Cxkck=w800",
     description: "Asırlık zeytin ağaçlarımızdan el ile hasat edilerek soğuk sıkım yöntemiyle üretilmiş zeytinyağı."
   },
   {
@@ -62,7 +62,7 @@ const PRODUCTS = [
     price: 140,
     unit: "660 gr",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1589135777403-24f3b1b399d5?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl4zkuReEOBQ0jlyd4Of5CaqJ1yc1UzjDMnE_48ynUbwDWnVuNa0nnvtVI6zT1jh3SPsWoC4K4L2qxVI9UyZOTEDsI73B6NNWmYROPKYA78fSn0dzy7CVOS4-7pFjwzPlOogl-M3a7I2Hwo=w800",
     description: "Bahçemizden toplanan taze çilekler ve pancar şekeri ile odun ateşinde pişirilen katkısız reçel."
   },
   {
@@ -72,7 +72,7 @@ const PRODUCTS = [
     price: 60,
     unit: "Kg",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlV7s8NQjsWb_9DFbMq3sp_xtbopyf1NN-shqp0F3O8L3jWUoSC0YnL5HNXVoK8JwJI2PTjbKSuCILLZ1wL-00kHAIOuV5eed8UlvfIgnXWwWE5e1BUOWHjvDpaBdlMBd7ekHzvvZYwtz_e=w800",
     description: "Kokusu ve lezzetiyle eski günleri hatırlatan, hiçbir kimyasal ilaç kullanılmadan yetişen domatesler."
   },
   {
@@ -82,7 +82,7 @@ const PRODUCTS = [
     price: 290,
     unit: "Kg",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkct6DwjbvnfR2ZsILieEPakK5aMndv-8SZxhxtpbbe-nxIT8JN8L7rQPZNObYVvuhJ7DWk57utpnFk5CNHHrFR_uWnzS0Ypc6U2a1nqTolTZUPmYmtTh-zt8gPTMLI0-8bzPLwHInUKHpI=w800",
     description: "Geleneksel yayık yöntemi ile taze inek sütünden elde edilen hakiki tuzsuz köy tereyağı."
   }
 ];
@@ -93,8 +93,8 @@ const INSTAGRAM_POSTS = [
   { id: 2, image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmpu1gnwP6N3xiERBzVXkSpCSFo4Tyja3ZjHM-gMXATFO59MQmJpX6Rs71OyVcLI4kIqbV0Nrl9oU6UIn6nuiL6A2CxjceBIXTnXMKbmehtAdek38USU9-KUDf9JAcK4V7HgXqmmpqKzj4O=w600", likes: 185, comments: 8 },
   { id: 3, image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlV7s8NQjsWb_9DFbMq3sp_xtbopyf1NN-shqp0F3O8L3jWUoSC0YnL5HNXVoK8JwJI2PTjbKSuCILLZ1wL-00kHAIOuV5eed8UlvfIgnXWwWE5e1BUOWHjvDpaBdlMBd7ekHzvvZYwtz_e=w600", likes: 320, comments: 24 },
   { id: 4, image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmRF2H7879a47LTFZDwmkPcJx0D9Fz2g2tcHvgVvk_4OcT3JwrV_RfWSmW9K-tWDkTIZRzU3mz4c5s7yQJ6QLzDebjfKFZa9c-y3fOc2H9hezMPgSmx00uyQlQf2ZEetbcHlkPjUatT5Ykn=w600", likes: 412, comments: 37 },
-  { id: 5, image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk0yHPQRZ1K-tpX1ZHYYPb4LiynuhZDTn1gB5R3w2fd6B4q-mEsjkvefdJKh42HOSEN_0ET3GbKq8QxHLZhLmxXP4UWIbFOd-oBLP4flwk9Xf6e1Xy9RoF9QAhjpWfpDnXBthacVzbAJQo=w600", likes: 295, comments: 19 },
-  { id: 6, image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80", likes: 354, comments: 15 }
+  { id: 5, image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWns-NgkATgIiw7zqTuts-VuOEuto6lpWAySJaQjK-9EApW2FPCtYEAl2Mg0a32E8-bydID2ADAdv7tiXdZoOue_4JHZDk4AKAo9hJoawOPqyzKbR7oVzdni5ztW-XT79GnCuXVoMTmKAi-3=w600", likes: 295, comments: 19 },
+  { id: 6, image: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNjGzeDVEnHcsTMVWyVor04WPf6oUDhrLtg7UY5GWCI6HagoJz33NnIGCFJRc3OVTQhX-J2rFURwduFxarj42itVQ-U5-uCX7r9IChmh0z-pTXL5nEslZMkUyTpB9GdQ_ohmSxCNzWWrY=w600", likes: 354, comments: 15 }
 ];
 
 export default function App() {
@@ -150,7 +150,7 @@ export default function App() {
   const cartItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   const sendWhatsAppOrder = () => {
-    const phone = "905300000000"; // Hasbahçem WhatsApp No
+    const phone = "905322954183"; // Hasbahçem WhatsApp No
     let message = `*Hasbahçem Organik Ürünler Siparişi*\n\nMerhaba, bahçenizden aşağıdaki doğal ürünleri sipariş etmek istiyorum:\n\n`;
     
     cart.forEach(item => {
@@ -371,7 +371,7 @@ export default function App() {
             <div className="lg:col-span-6 space-y-4">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                 <img 
-                  src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWld5ORj9p4avjzMqNspKYP6siXBfLpRFhoe9SXtcqj-FZ38f0wOFlRhMdlnQ-mdWPF7UYvO9x5_G2rM8m-czdLIbfdfE7WbVw8uwKHQmnb3ucTiH5sehtANVEOnssTTXPTJTcIefLwWIL7V=w800" 
                   alt="Çiftlik ve Doğal Yaşam" 
                   className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -721,12 +721,12 @@ export default function App() {
                   <div>
                     <h4 className="font-bold text-sage-900 text-sm">Çiftlik Adresi</h4>
                     <a 
-                      href="https://maps.app.goo.gl/9K8KTd5s53QxKvdQ6" 
+                      href="https://maps.app.goo.gl/rEw2YFUadLHxmg786" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="text-primary-600 hover:text-primary-700 hover:underline text-xs mt-1 block font-semibold"
                     >
-                      Zeytinlik Mah. No: 12, Seferihisar / İzmir (Yol Tarifi Al ↗)
+                      Safranbolu, Karabük (Yol Tarifi Al ↗)
                     </a>
                   </div>
                 </div>
@@ -737,7 +737,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sage-900 text-sm">Telefon & WhatsApp Hattı</h4>
-                    <p className="text-sage-500 text-xs mt-1">+90 530 000 00 00</p>
+                    <p className="text-sage-500 text-xs mt-1">+90 532 295 41 83</p>
                   </div>
                 </div>
 
