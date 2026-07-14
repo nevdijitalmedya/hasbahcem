@@ -186,7 +186,7 @@ export default function App() {
               className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-md border border-white/20 transition-transform group-hover:scale-105" 
             />
             <div>
-              <span className={`text-xl md:text-2xl font-extrabold tracking-tight block font-serif transition-colors duration-300 ${
+              <span className={`text-xl md:text-2xl font-semibold tracking-tight block font-serif transition-colors duration-300 ${
                 scrolled ? 'text-primary-900' : 'text-white'
               }`}>
                 Hasbahçem
@@ -302,7 +302,7 @@ export default function App() {
               Doğadan Sofranıza Doğallık
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight font-serif drop-shadow-md text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight font-serif drop-shadow-md text-white leading-tight">
               🌿 Toprağın Bereketi, <span className="text-primary-200 block sm:inline">Hasbahçem</span> 🌿
             </h1>
             
@@ -320,7 +320,7 @@ export default function App() {
               </a>
               <a 
                 href="#hikayemiz" 
-                className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-full transition-all hover:scale-105 flex items-center justify-center gap-2 backdrop-blur-sm"
+                className="w-full sm:w-auto bg-black/20 hover:bg-black/35 border border-white/20 text-white font-medium px-8 py-4 rounded-full transition-all hover:scale-105 flex items-center justify-center gap-2 backdrop-blur-sm"
               >
                 Hikayemizi Oku
               </a>
@@ -392,7 +392,7 @@ export default function App() {
             <div className="lg:col-span-6 space-y-6">
               <div className="space-y-2">
                 <span className="text-primary-600 font-bold uppercase tracking-widest text-xs block">Biz Kimiz?</span>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 font-serif leading-tight">
+                <h2 className="text-3xl md:text-4xl font-semibold text-primary-900 font-serif leading-tight">
                   Hasbahçem'in Topraktan Sofranıza Uzanan Hikayesi
                 </h2>
               </div>
@@ -456,7 +456,7 @@ export default function App() {
           {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
             <span className="text-primary-600 font-bold uppercase tracking-widest text-xs">Bahçe Ürünleri</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 font-serif">
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary-900 font-serif">
               Taze ve Doğal Ürünlerimiz
             </h2>
             <p className="text-sage-600 text-sm md:text-base">
@@ -517,7 +517,7 @@ export default function App() {
                         <span className="text-xs text-sage-400 font-medium ml-1">({product.rating})</span>
                       </div>
                       
-                      <h3 className="font-extrabold text-primary-900 text-lg md:text-xl font-serif">
+                      <h3 className="font-semibold text-primary-900 text-lg md:text-xl font-serif">
                         {product.name}
                       </h3>
                       <p className="text-sage-500 text-xs md:text-sm line-clamp-2 leading-relaxed">
@@ -704,7 +704,7 @@ export default function App() {
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-2">
                 <span className="text-primary-600 font-bold uppercase tracking-widest text-xs block">İletişim</span>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 font-serif">
+                <h2 className="text-3xl md:text-4xl font-semibold text-primary-900 font-serif">
                   Bizimle İletişime Geçin
                 </h2>
                 <p className="text-sage-600 text-sm">
@@ -755,7 +755,7 @@ export default function App() {
 
             {/* Quick Contact Form */}
             <div className="lg:col-span-7 bg-white p-8 rounded-3xl border border-sage-100 shadow-lg">
-              <h3 className="text-xl font-extrabold text-primary-900 font-serif mb-6">
+              <h3 className="text-xl font-semibold text-primary-900 font-serif mb-6">
                 Bize Mesaj Gönderin
               </h3>
               
@@ -881,7 +881,8 @@ export default function App() {
             <p className="flex items-center gap-1.5">
               <span>Made with</span>
               <Heart className="w-3.5 h-3.5 text-rose-500 fill-current" />
-              <span>for a healthy life.</span>
+              <span>by</span>
+              <a href="https://eradijital.com" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold text-white/60 hover:text-white transition-colors">eradijital.com</a>
             </p>
           </div>
         </div>
