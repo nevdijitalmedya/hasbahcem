@@ -154,10 +154,10 @@ export default function App() {
     let message = `*Hasbahçem Organik Ürünler Siparişi*\n\nMerhaba, bahçenizden aşağıdaki doğal ürünleri sipariş etmek istiyorum:\n\n`;
     
     cart.forEach(item => {
-      message += `• *${item.name}* - ${item.quantity} ${item.unit} (${item.price * item.quantity} TL)\n`;
+      message += `• *${item.name}* - ${item.quantity} ${item.unit}\n`;
     });
     
-    message += `\n*Toplam Sipariş Tutarı:* ${cartTotal} TL\n\nAdres ve teslimat detaylarımı bu mesajın ardından ileteceğim. Teşekkürler!`;
+    message += `\nAdres ve teslimat detaylarımı bu mesajın ardından ileteceğim. Teşekkürler!`;
     
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
@@ -345,7 +345,7 @@ export default function App() {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="font-bold text-sage-900 text-sm">Sertifikalı Organik</h3>
+              <h3 className="font-bold text-sage-900 text-sm">Organik & Yerli</h3>
               <p className="text-xs text-sage-500">Yerel & yerli üretim garantisi</p>
             </div>
           </div>
@@ -417,7 +417,7 @@ export default function App() {
                   <div className="bg-primary-100 p-1.5 rounded-full text-primary-600">
                     <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-sm font-semibold text-sage-800">Sertifikalı Arıcılık & Tarım</span>
+                  <span className="text-sm font-semibold text-sage-800">Doğal Arıcılık & Tarım</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="bg-primary-100 p-1.5 rounded-full text-primary-600">
@@ -528,11 +528,8 @@ export default function App() {
                     {/* Price and Add button */}
                     <div className="flex justify-between items-center pt-2 mt-auto">
                       <div>
-                        <span className="text-2xl font-black text-primary-950 font-serif">
-                          {product.price} TL
-                        </span>
-                        <span className="text-xs text-sage-400 font-semibold block">
-                          / {product.unit}
+                        <span className="text-base font-bold text-sage-600 block">
+                          Birim: {product.unit}
                         </span>
                       </div>
 
@@ -849,13 +846,13 @@ export default function App() {
               </ul>
             </div>
 
-            {/* Certifications */}
+            {/* Production Standards */}
             <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Sertifikalarımız</h4>
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Üretim Standartlarımız</h4>
               <ul className="space-y-2 text-xs text-white/70">
-                <li>Organik Tarım Sertifikası (TR-OT)</li>
-                <li>Sertifikalı Doğal Arıcılık Belgesi</li>
-                <li>İyi Tarım Uygulamaları Uyumluluğu</li>
+                <li>Organik Tarım Yöntemleri</li>
+                <li>Geleneksel Doğal Arıcılık</li>
+                <li>İyi Tarım Uygulamaları</li>
               </ul>
             </div>
 
@@ -961,7 +958,7 @@ export default function App() {
                           {item.name}
                         </h4>
                         <p className="text-xs text-sage-400 font-semibold">
-                          Birim Fiyat: {item.price} TL / {item.unit}
+                          Birim: {item.unit}
                         </p>
                         
                         {/* Quantity controls */}
@@ -998,21 +995,6 @@ export default function App() {
               {/* Checkout / Footer */}
               {cart.length > 0 && (
                 <div className="p-6 border-t border-sage-100 bg-white space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-center text-sage-600 text-sm">
-                      <span>Ara Toplam</span>
-                      <span className="font-semibold">{cartTotal} TL</span>
-                    </div>
-                    <div className="flex justify-between items-center text-sage-600 text-sm">
-                      <span>Kargo / Teslimat</span>
-                      <span className="text-emerald-600 font-bold">Ücretsiz</span>
-                    </div>
-                    <div className="border-t border-sage-100 pt-2 flex justify-between items-center text-primary-950 font-black font-serif text-lg">
-                      <span>Toplam</span>
-                      <span>{cartTotal} TL</span>
-                    </div>
-                  </div>
-
                   <button
                     onClick={sendWhatsAppOrder}
                     className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-2xl transition-all shadow-md flex items-center justify-center gap-2.5 text-sm sm:text-base group"
