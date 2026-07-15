@@ -26,6 +26,7 @@ import maniyeDomatesiImg from './assets/maniye_domatesi.png';
 import bahceFasulyesiImg from './assets/bahce_fasulyesi.png';
 import bahceKabagiImg from './assets/bahce_kabagi.png';
 import karakovanBaliImg from './assets/karakovan_bali.png';
+import tarlaCilekImg from './assets/tarla_cilek.png';
 
 // Mock Products Data
 const PRODUCTS = [
@@ -40,36 +41,6 @@ const PRODUCTS = [
     description: "Safranbolu'nun asırlık ata tohumu maniye domatesi. İnce kabuklu, bol sulu, etli ve eşsiz kokusuyla tam bir geleneksel lezzet."
   },
   {
-    id: 2,
-    name: "Gezen Tavuk Yumurtası",
-    category: "Yumurta & Süt",
-    price: 150,
-    unit: "30 Adet",
-    rating: 5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmmCNkhou6Tf7f0zFZiyyxpuEIiZBnNDNyAk17XYeZ4NrzW_g2pIQ1lR7Z5x3i_DqcVNXavGFGKhDKbyvKZEFX5__vlGQYpMhZ90NvRmB8NLwB0GPT--wYrKLwoKcMlW2VIGUhdDfWswUTO=w800",
-    description: "Bahçemizde özgürce dolaşan, doğal yemlerle beslenen tavuklarımızın günlük taze yumurtaları."
-  },
-  {
-    id: 1,
-    name: "Karakovan Çiçek Balı",
-    category: "Bal & Reçel",
-    price: 380,
-    unit: "Kg",
-    rating: 5,
-    image: karakovanBaliImg,
-    description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
-  },
-  {
-    id: 4,
-    name: "Ev Yapımı Çilek Reçeli",
-    category: "Bal & Reçel",
-    price: 140,
-    unit: "660 gr",
-    rating: 4.9,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl4zkuReEOBQ0jlyd4Of5CaqJ1yc1UzjDMnE_48ynUbwDWnVuNa0nnvtVI6zT1jh3SPsWoC4K4L2qxVI9UyZOTEDsI73B6NNWmYROPKYA78fSn0dzy7CVOS4-7pFjwzPlOogl-M3a7I2Hwo=w800",
-    description: "Bahçemizden toplanan taze çilekler ve pancar şekeri ile odun ateşinde pişirilen katkısız reçel."
-  },
-  {
     id: 5,
     name: "Ata Tohumu Çalı Fasulyesi",
     category: "Ata Tohumu",
@@ -78,16 +49,6 @@ const PRODUCTS = [
     rating: 4.9,
     image: bahceFasulyesiImg,
     description: "Bahçemizde ata tohumundan yetiştirdiğimiz kılçıksız, taze ve sulu çalı fasulyesi."
-  },
-  {
-    id: 6,
-    name: "Köy Tereyağı",
-    category: "Yumurta & Süt",
-    price: 290,
-    unit: "Kg",
-    rating: 5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkct6DwjbvnfR2ZsILieEPakK5aMndv-8SZxhxtpbbe-nxIT8JN8L7rQPZNObYVvuhJ7DWk57utpnFk5CNHHrFR_uWnzS0Ypc6U2a1nqTolTZUPmYmtTh-zt8gPTMLI0-8bzPLwHInUKHpI=w800",
-    description: "Geleneksel yayık yöntemi ile taze inek sütünden elde edilen hakiki tuzsuz köy tereyağı."
   },
   {
     id: 7,
@@ -118,6 +79,46 @@ const PRODUCTS = [
     rating: 5,
     image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&q=80&w=800",
     description: "Hiçbir yapay gübre kullanılmadan ata tohumu ile yetiştirilen çıtır ve taze bahçe ıspanağı."
+  },
+  {
+    id: 1,
+    name: "Karakovan Çiçek Balı",
+    category: "Bal & Reçel",
+    price: 380,
+    unit: "Kg",
+    rating: 5,
+    image: karakovanBaliImg,
+    description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
+  },
+  {
+    id: 2,
+    name: "Gezen Tavuk Yumurtası",
+    category: "Yumurta & Süt",
+    price: 150,
+    unit: "30 Adet",
+    rating: 5,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmmCNkhou6Tf7f0zFZiyyxpuEIiZBnNDNyAk17XYeZ4NrzW_g2pIQ1lR7Z5x3i_DqcVNXavGFGKhDKbyvKZEFX5__vlGQYpMhZ90NvRmB8NLwB0GPT--wYrKLwoKcMlW2VIGUhdDfWswUTO=w800",
+    description: "Bahçemizde özgürce dolaşan, doğal yemlerle beslenen tavuklarımızın günlük taze yumurtaları."
+  },
+  {
+    id: 4,
+    name: "Ev Yapımı Çilek Reçeli",
+    category: "Bal & Reçel",
+    price: 140,
+    unit: "660 gr",
+    rating: 4.9,
+    image: tarlaCilekImg,
+    description: "Bahçemizden toplanan taze çilekler ve pancar şekeri ile odun ateşinde pişirilen katkısız reçel."
+  },
+  {
+    id: 6,
+    name: "Köy Tereyağı",
+    category: "Yumurta & Süt",
+    price: 290,
+    unit: "Kg",
+    rating: 5,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkct6DwjbvnfR2ZsILieEPakK5aMndv-8SZxhxtpbbe-nxIT8JN8L7rQPZNObYVvuhJ7DWk57utpnFk5CNHHrFR_uWnzS0Ypc6U2a1nqTolTZUPmYmtTh-zt8gPTMLI0-8bzPLwHInUKHpI=w800",
+    description: "Geleneksel yayık yöntemi ile taze inek sütünden elde edilen hakiki tuzsuz köy tereyağı."
   }
 ];
 
