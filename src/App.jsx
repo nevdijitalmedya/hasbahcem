@@ -22,6 +22,9 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logoImg from './assets/logo.jpg';
+import maniyeDomatesiImg from './assets/maniye_domatesi.png';
+import bahceFasulyesiImg from './assets/bahce_fasulyesi.png';
+import bahceKabagiImg from './assets/bahce_kabagi.png';
 
 // Mock Products Data
 const PRODUCTS = [
@@ -32,7 +35,7 @@ const PRODUCTS = [
     price: 380,
     unit: "Kg",
     rating: 5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkfqCVowTL-O1-q3WfW6ftTUs6kl6UqsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWnpq28yEOU6KNqYlC8dYY3c_0shuDgPjdHSPjAyUDilWPv37a5SR-26_A8PE8c=w800",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkfqCVowTL-O1-q3WfW6ftTUs6kl6UqsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWnpq28yEOU6KNqYlC8dYY3c_0shuDgPjdHSPjAyUDilWPv37a5SR-26_A8PE8c=w800",
     description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
   },
   {
@@ -47,13 +50,13 @@ const PRODUCTS = [
   },
   {
     id: 3,
-    name: "Soğuk Sıkım Sızma Zeytinyağı",
-    category: "Zeytinyağı",
-    price: 450,
-    unit: "1 Litre",
+    name: "Ata Tohumu Maniye Domatesi",
+    category: "Ata Tohumu",
+    price: 80,
+    unit: "Kg",
     rating: 5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl7iWotlBfPaOVFyNUzMQn7pPuQTRrv1djujpSPBYesl0PZ3S9FKKS2xtLbQEe3knSS30MT6YxsxOObclJorg_ebWaDk9mBe0XizF77Mym9JuAKkegUMjJGgIzWoalf8TdPFP7qV_Cxkck=w800",
-    description: "Asırlık zeytin ağaçlarımızdan el ile hasat edilerek soğuk sıkım yöntemiyle üretilmiş zeytinyağı."
+    image: maniyeDomatesiImg,
+    description: "Safranbolu'nun asırlık ata tohumu maniye domatesi. İnce kabuklu, bol sulu, etli ve eşsiz kokusuyla tam bir geleneksel lezzet."
   },
   {
     id: 4,
@@ -67,13 +70,13 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: "Dalından Tarla Domatesi",
-    category: "Sebze & Meyve",
-    price: 60,
+    name: "Ata Tohumu Çalı Fasulyesi",
+    category: "Ata Tohumu",
+    price: 90,
     unit: "Kg",
-    rating: 4.8,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlV7s8NQjsWb_9DFbMq3sp_xtbopyf1NN-shqp0F3O8L3jWUoSC0YnL5HNXVoK8JwJI2PTjbKSuCILLZ1wL-00kHAIOuV5eed8UlvfIgnXWwWE5e1BUOWHjvDpaBdlMBd7ekHzvvZYwtz_e=w800",
-    description: "Kokusu ve lezzetiyle eski günleri hatırlatan, hiçbir kimyasal ilaç kullanılmadan yetişen domatesler."
+    rating: 4.9,
+    image: bahceFasulyesiImg,
+    description: "Bahçemizde ata tohumundan yetiştirdiğimiz kılçıksız, taze ve sulu çalı fasulyesi."
   },
   {
     id: 6,
@@ -84,6 +87,36 @@ const PRODUCTS = [
     rating: 5,
     image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkct6DwjbvnfR2ZsILieEPakK5aMndv-8SZxhxtpbbe-nxIT8JN8L7rQPZNObYVvuhJ7DWk57utpnFk5CNHHrFR_uWnzS0Ypc6U2a1nqTolTZUPmYmtTh-zt8gPTMLI0-8bzPLwHInUKHpI=w800",
     description: "Geleneksel yayık yöntemi ile taze inek sütünden elde edilen hakiki tuzsuz köy tereyağı."
+  },
+  {
+    id: 7,
+    name: "Ata Tohumu Bahçe Kabağı",
+    category: "Ata Tohumu",
+    price: 70,
+    unit: "Kg",
+    rating: 4.8,
+    image: bahceKabagiImg,
+    description: "Geleneksel ata tohumlarımızdan yetiştirilen, taze ve ince kabuklu leziz bahçe kabağı."
+  },
+  {
+    id: 8,
+    name: "Ata Tohumu Tarla Salatalığı",
+    category: "Ata Tohumu",
+    price: 60,
+    unit: "Kg",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&fit=crop&q=80&w=800",
+    description: "Çıtır çıtır yapısı ve yoğun kokusuyla bahçemizden taze toplanan ata tohumu salatalık."
+  },
+  {
+    id: 9,
+    name: "Ata Tohumu Körpe Ispanak",
+    category: "Ata Tohumu",
+    price: 75,
+    unit: "Kg",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&q=80&w=800",
+    description: "Hiçbir yapay gübre kullanılmadan ata tohumu ile yetiştirilen çıtır ve taze bahçe ıspanağı."
   }
 ];
 
@@ -163,7 +196,7 @@ export default function App() {
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
   };
 
-  const categories = ["Tümü", "Bal & Reçel", "Yumurta & Süt", "Zeytinyağı", "Sebze & Meyve"];
+  const categories = ["Tümü", "Bal & Reçel", "Yumurta & Süt", "Ata Tohumu", "Sebze & Meyve"];
 
   const filteredProducts = selectedCategory === "Tümü" 
     ? PRODUCTS 
@@ -402,7 +435,7 @@ export default function App() {
               </p>
 
               <p className="text-sage-700 text-sm md:text-base leading-relaxed">
-                Kovanlarımızdaki arıların ürettiği şifalı ballardan, zeytin ağaçlarımızdan elde ettiğimiz hakiki zeytinyağlarına kadar her üründe doğallığı, temiz tarım ilkelerini ve geleneksel tatları koruyoruz. Hiçbir katkı maddesi, yapay gübre veya koruyucu kimyasal kullanmadan üretim yapıyoruz.
+                Kovanlarımızdaki arıların ürettiği şifalı ballardan; meşhur Safranbolu maniye domatesi, taze çalı fasulyesi, çıtır tarla salatalığı, körpe ıspanak ve kabak gibi genetiği korunmuş ata tohumlarımızdan yetiştirdiğimiz yerel sebzelere kadar her üründe doğallığı, temiz tarım ilkelerini ve geleneksel tatları koruyoruz. Hiçbir katkı maddesi, yapay gübre veya koruyucu kimyasal kullanmadan üretim yapıyoruz.
               </p>
 
               {/* USP Checklist */}
@@ -636,7 +669,7 @@ export default function App() {
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                 </div>
                 <p className="text-sage-700 text-sm md:text-base italic leading-relaxed">
-                  "Çocuklarıma hazır gıda yedirmemeye özen gösteriyorum. Hasbahçem zeytinyağı ve ballarını güvenle kullanıyorum. Kokusu ve tadı gerçekten harika."
+                  "Çocuklarıma hazır gıda yedirmemeye özen gösteriyorum. Hasbahçem'in ata tohumu maniye domatesi, taze fasulyesi ve diğer taze sebzelerini güvenle kullanıyorum. Kokusu ve tadı harika."
                 </p>
               </div>
               <div className="flex items-center gap-3 pt-6 mt-6 border-t border-sage-100">
