@@ -25,18 +25,19 @@ import logoImg from './assets/logo.jpg';
 import maniyeDomatesiImg from './assets/maniye_domatesi.png';
 import bahceFasulyesiImg from './assets/bahce_fasulyesi.png';
 import bahceKabagiImg from './assets/bahce_kabagi.png';
+import karakovanBaliImg from './assets/karakovan_bali.png';
 
 // Mock Products Data
 const PRODUCTS = [
   {
-    id: 1,
-    name: "Karakovan Çiçek Balı",
-    category: "Bal & Reçel",
-    price: 380,
+    id: 3,
+    name: "Ata Tohumu Maniye Domatesi",
+    category: "Ata Tohumu",
+    price: 80,
     unit: "Kg",
     rating: 5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkfqCVowTL-O1-q3WfW6ftTUs6kl6UqsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWsnF6nGBM8Nc5QrbFmcxDB__dFTXUak149CiIkBDqf84WwtfKQWnpq28yEOU6KNqYlC8dYY3c_0shuDgPjdHSPjAyUDilWPv37a5SR-26_A8PE8c=w800",
-    description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
+    image: maniyeDomatesiImg,
+    description: "Safranbolu'nun asırlık ata tohumu maniye domatesi. İnce kabuklu, bol sulu, etli ve eşsiz kokusuyla tam bir geleneksel lezzet."
   },
   {
     id: 2,
@@ -49,14 +50,14 @@ const PRODUCTS = [
     description: "Bahçemizde özgürce dolaşan, doğal yemlerle beslenen tavuklarımızın günlük taze yumurtaları."
   },
   {
-    id: 3,
-    name: "Ata Tohumu Maniye Domatesi",
-    category: "Ata Tohumu",
-    price: 80,
+    id: 1,
+    name: "Karakovan Çiçek Balı",
+    category: "Bal & Reçel",
+    price: 380,
     unit: "Kg",
     rating: 5,
-    image: maniyeDomatesiImg,
-    description: "Safranbolu'nun asırlık ata tohumu maniye domatesi. İnce kabuklu, bol sulu, etli ve eşsiz kokusuyla tam bir geleneksel lezzet."
+    image: karakovanBaliImg,
+    description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
   },
   {
     id: 4,
