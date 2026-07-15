@@ -25,7 +25,7 @@ import logoImg from './assets/logo.jpg';
 import maniyeDomatesiImg from './assets/maniye_domatesi.png';
 import bahceFasulyesiImg from './assets/bahce_fasulyesi.png';
 import bahceKabagiImg from './assets/bahce_kabagi.png';
-import karakovanBaliImg from './assets/karakovan_bali.png';
+import karakovanBaliNoLabelImg from './assets/karakovan_bali_no_label.png';
 import tarlaCilekImg from './assets/tarla_cilek.png';
 
 // Mock Products Data
@@ -87,7 +87,7 @@ const PRODUCTS = [
     price: 380,
     unit: "Kg",
     rating: 5,
-    image: karakovanBaliImg,
+    image: karakovanBaliNoLabelImg,
     description: "Hasbahçem kovanlarından tamamen doğal yöntemlerle elde edilmiş, katkısız süzme çiçek balı."
   },
   {
